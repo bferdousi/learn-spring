@@ -12,6 +12,7 @@ import com.baeldung.ls.service.IProjectService;
 @Service
 public class ProjectServiceImpl implements IProjectService {
 
+    @Autowired
     private IProjectRepository projectRepository;
 
     @Override
@@ -22,10 +23,5 @@ public class ProjectServiceImpl implements IProjectService {
     @Override
     public Project save(Project project) {
         return projectRepository.save(project);
-    }
-
-    @Autowired
-    public void setProjectRepository(IProjectRepository projectRepository) {
-        this.projectRepository = projectRepository;
     }
 }
