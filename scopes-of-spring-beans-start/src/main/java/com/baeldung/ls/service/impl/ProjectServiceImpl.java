@@ -14,6 +14,9 @@ public class ProjectServiceImpl implements IProjectService {
     @Autowired
     private IProjectRepository projectRepository;
 
+    @Autowired
+    private IProjectRepository projectRepository2;
+
     @Override
     public Optional<Project> findById(Long id) {
         return projectRepository.findById(id);
