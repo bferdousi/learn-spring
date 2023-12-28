@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import com.baeldung.ls.persistence.model.Project;
 import com.baeldung.ls.persistence.repository.IProjectRepository;
-
 @Repository
 public class ProjectRepositoryImpl implements IProjectRepository {
 
